@@ -1,0 +1,135 @@
+.chat-container {
+  max-width: 600px;
+  height: 80vh;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  padding: 16px;
+  background-color: #28a745;
+  color: white;
+  text-align: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+}
+
+.chat-message {
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.chat-message.me {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.chat-message.other {
+  background-color: #eee;
+  align-self: flex-start;
+}
+
+.chat-input {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.chat-input button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.chat-input button:hover {
+  background-color: #218838;
+}
+
+.chat-message {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 60%;
+  word-wrap: break-word;
+}
+
+.chat-message.me {
+  background-color: #d1f7c4;
+  align-self: flex-end;
+  text-align: right;
+}
+
+.chat-message.other {
+  background-color: #f0f0f0;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.message-meta {
+  font-size: 0.8rem;
+  color: #555;
+  margin-bottom: 4px;
+}
+
+.time {
+  font-style: italic;
+  margin-left: 10px;
+}
+.typing-indicator {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 4px;
+}
+
+.timestamp {
+  font-size: 0.75rem;
+  color: #999;
+  margin-left: 10px;
+}
+
+input[type="text"] {
+  color: black; /* or use white if the background is dark */
+  font-weight: bold;
+  background-color: white; /* optional for contrast */
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+::placeholder {
+  color: #444; /* darker placeholder */
+  font-weight: 500;
+}
+#typing-indicator {
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+}
